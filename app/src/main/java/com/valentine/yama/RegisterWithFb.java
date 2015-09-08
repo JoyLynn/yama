@@ -15,12 +15,12 @@ import com.facebook.UiLifecycleHelper;
 import com.facebook.model.GraphUser;
 
 
-public class Register extends ActionBarActivity {
+public class RegisterWithFb extends ActionBarActivity {
     // Create, automatically open (if applicable), save, and restore the
     // Active Session in a way that is similar to Android UI lifecycles.
     private UiLifecycleHelper uiHelper;
     private View otherView;
-    private static final String TAG = "Register";
+    private static final String TAG = "RegisterWithFb";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -65,12 +65,6 @@ public class Register extends ActionBarActivity {
                         otherView.setVisibility(View.VISIBLE);
                         // Set User name
                         name.setText("Hello " + user.getName());
-                        // Set Gender
-                        gender.setText("Your Gender: "
-                                + user.getProperty("gender").toString());
-                        location.setText("Your Current Location: "
-                                + user.getLocation().getProperty("name")
-                                .toString());
                     }
                 }
             }).executeAsync();
