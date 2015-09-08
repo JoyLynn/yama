@@ -26,7 +26,7 @@ public class Register extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 //        FacebookSdk.sdkInitialize(getApplicationContext());
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_register);
         // Set View that should be visible after log-in invisible initially
         otherView = (View) findViewById(R.id.other_views);
         otherView.setVisibility(View.GONE);
