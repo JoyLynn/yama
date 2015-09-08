@@ -49,8 +49,8 @@ public class RegisterWithFb extends ActionBarActivity {
     private void onSessionStateChange(Session session, SessionState state,
                                       Exception exception) {
         final TextView name = (TextView) findViewById(R.id.name);
-        final TextView gender = (TextView) findViewById(R.id.gender);
-        final TextView location = (TextView) findViewById(R.id.location);
+//        final TextView gender = (TextView) findViewById(R.id.gender);
+//        final TextView location = (TextView) findViewById(R.id.location);
         // When Session is successfully opened (User logged-in)
         if (state.isOpened()) {
             Log.i(TAG, "Logged in...");
