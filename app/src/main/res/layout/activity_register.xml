@@ -11,11 +11,7 @@
                 tools:context=".MainActivity">
 
 
-<ImageView
-                android:layout_width="300dp"
-                android:layout_height="100dp"
-                android:layout_gravity="center"
-                android:src="@drawable/myapp_bg_image" />
+
 
 <LinearLayout
                 android:id="@+id/other_views"
