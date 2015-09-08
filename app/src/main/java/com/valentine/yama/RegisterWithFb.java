@@ -7,6 +7,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
+import com.facebook.AppEventsLogger;
 import com.facebook.Request;
 import com.facebook.Response;
 import com.facebook.Session;
@@ -85,12 +86,20 @@ public class RegisterWithFb extends ActionBarActivity {
     @Override
     public void onResume() {
         super.onResume();
+
+        // Logs 'install' and 'app activate' App Events.
+        AppEventsLogger.activateApp(this);
+
         uiHelper.onResume();
     }
 
     @Override
     public void onPause() {
         super.onPause();
+
+        // Logs 'app deactivate' App Event.
+        AppEventsLogger.deactivateApp(this);
+
         uiHelper.onPause();
     }
 
