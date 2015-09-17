@@ -37,6 +37,10 @@
             android:name=".Welcome"
             android:label="@string/title_activity_welcome" >
         </activity>
+        <activity
+            android:name=".NeighbourhoodsMain"
+            android:label="@string/title_activity_neighbourhoods_main" >
+        </activity>
     </application>
 
 </manifest>
