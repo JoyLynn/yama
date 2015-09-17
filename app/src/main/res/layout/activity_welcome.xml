@@ -22,6 +22,7 @@
         android:layout_height="wrap_content"
         android:text="Go to App"
         android:id="@+id/appButton"
+        android:onClick=""
         android:layout_centerVertical="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true" />
